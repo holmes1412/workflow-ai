@@ -140,12 +140,12 @@ WFHttpChunkedTask *LLMClient::create(SessionContext *ctx)
 	if (ctx->req->stream)
 	{
 		task->set_watch_timeout(this->streaming_ttft);
-		task->set_recv_timeout(this->streaming_tpft);
+		task->set_receive_timeout(this->streaming_tpft);
 	}
 	else
 	{
 		task->set_watch_timeout(this->ttft);
-		task->set_recv_timeout(this->tpft);
+		task->set_receive_timeout(this->tpft);
 	}
 
 	auto *http_req = task->get_req();
