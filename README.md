@@ -125,6 +125,14 @@ make
 # run sync_demo
 ./sync_demo <your_api_key>
 ```
+
+### 3.4 Build with Dev Container in VSCode
+1. Make sure Docker and VSCode are installed on your computer.
+2. Open Folder in Dev Container. See [document](https://code.visualstudio.com/docs/devcontainers/tutorial) for more info.
+   - It will install bazel, cmake, workflow and other dependencies automatically.
+   - It supports both arm64 and x86_64.
+3. Build with CMake or Bazel at your ease.
+
 </details>
 
 ## 4. Quick Start

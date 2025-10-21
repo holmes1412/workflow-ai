@@ -122,6 +122,13 @@ make
 # 运行同步示例
 ./sync_demo <your_api_key>
 ```
+
+### 3.4 在 VSCode 中使用 Dev Container 构建
+1. 确保您的计算机上已安装 Docker 和 VSCode。
+2. 在 Dev Container 中打开文件夹。有关更多信息，请参阅[文档](https://code.visualstudio.com/docs/devcontainers/tutorial)。
+   - 它将自动安装 bazel、cmake、workflow 和其他依赖项。
+   - 它支持 arm64 和 x86_64 架构。
+3. 使用 CMake 或 Bazel 轻松构建。
 </details>
 
 ## 4. 快速开始
