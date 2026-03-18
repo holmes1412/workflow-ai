@@ -79,9 +79,9 @@ install(DIRECTORY src/ DESTINATION include FILES_MATCHING PATTERN "*.h")
 
 set(LINK_LIBS)
 if(APPLE)
-	set(LINK_LIBS pthread ${LIBRARY_NAME} workflow ${OPENSSL_LIBRARIES})
+	set(LINK_LIBS ${LIBRARY_NAME} workflow ${OPENSSL_LIBRARIES} pthread)
 else()
-	set(LINK_LIBS pthread ${LIBRARY_NAME} workflow ssl crypto rt)
+	set(LINK_LIBS ${LIBRARY_NAME} workflow ssl crypto rt pthread)
 endif()
 
 file(GLOB EXAMPLES_SRC "examples/*.cc")
